@@ -1,0 +1,108 @@
+/** 
+* @package JJ Social Images
+* @author JoomJunk
+* @copyright	 2012 JoomJunk. All Rights Reserved
+* @license http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+#socialimages {
+	width:100%;
+	height: 100%;
+	padding: 15px;
+}
+
+
+#socialimages a {
+	text-decoration: none;
+	border: none;
+}
+
+#socialimages ul.socialimages li#float { float: left; }
+#socialimages ul.socialimages li#break { clear:both; }
+
+
+
+/* ***************************************************
+************* STYLE 01 AND 64x64 PIXELS **************
+*************************************************** */
+
+
+.icons_01_64 {
+    background-image: url('../icons/social-icons_01_64.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icons_facebook_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -5px;
+}
+
+.icons_twitter_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -5px;
+}
+
+.icons_gplus_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -153px -5px;
+}
+
+.icons_instagram_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -79px;
+}
+
+.icons_pinterest_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -79px;
+}
+
+.icons_foursquare_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -153px -79px;
+}
+
+.icons_myspace_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -153px;
+}
+
+.icons_youtube_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -79px -153px;
+}
+
+.icons_flickr_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -153px -153px;
+}
+
+.icons_digg_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -227px -5px;
+}
+
+.icons_linkedin_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -227px -79px;
+}
+
+.icons_rss_01_64 {
+    width: 64px;
+    height: 64px;
+    background-position: -227px -153px;
+}
+

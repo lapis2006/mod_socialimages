@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+    <name>JJ Social Images</name>
+    <author>JoomJunk</author>
+	<creationDate>11th Nov 2011</creationDate>
+	<copyright>Copyright (C) 2011 - 2012 JoomJunk</copyright>
+	<authorEmail>admin@joomjunk.co.uk</authorEmail>
+	<authorUrl>http://www.joomjunk.co.uk</authorUrl>
+    <version>1.0.4</version>
+    <licence>http://www.gnu.org/licenses/gpl-3.0.html</licence>
+	<description>JJSOCIALIMAGESDESC</description>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.mod_socialimages.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_socialimages.sys.ini</language>
+    </languages>
+	
+    <files>
+        <filename module="mod_socialimages">mod_socialimages.php</filename>
+        <filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>icons</folder>
+    </files>
+	
+	<updateservers>
+		<server type="extension" name="JJ Social Images" priority="1">http://www.joomjunk.co.uk/updates/socialimages_update.xml</server>
+	</updateservers>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic" label="Basic">
+				<field name="@spacer" type="spacer" default="&lt;div id=&quot;image_1&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Pre Text Settings&lt;/div&gt;" label="" description="" />
+				<field name="pretext" type="textarea" cols="40" rows="6" default="" label="PRETEXT" description="PRETEXTDESC" />
+				<field name="pretext_align" type="radio" default="left" label="PRETEXTALIGN" description="PRETEXTALIGNDESC">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="justify">Justify</option>
+				</field>
+				
+				<field name="@spacer2" type="spacer" default="&lt;div id=&quot;image_1&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;General Settings&lt;/div&gt;" label="" description="" />
+
+				<field name="facebook_link" type="text" default="http://" label="LINK" description="LINKFACEBOOKDESC" />
+				<field name="facebookbl" type="radio" default="" label="TWITTERBL" description="TWITTERBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+
+				
+				<field name="@spacer3" type="spacer" default="" label="" description="" />
+
+				<field name="twitter" type="radio" default="1" label="TWITTER" description="TWITTERDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="twitter_link" type="text" default="http://" label="LINK" description="LINKTWITTERDESC" />
+				<field name="twitterbl" type="radio" default="" label="TWITTERBL" description="TWITTERBLDESC">
+					<option value="floatline">No</option>
+					<option value="breakline">Yes</option>
+				</field>
+				
+				<field name="@spacer4" type="spacer" default="" label="" description="" />
+				
+				<field name="google" type="radio" default="1" label="GOOGLE" description="GOOGLEDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="google_link" type="text" default="http://" label="LINK" description="LINKGOOGLEDESC" />
+				<field name="googlebl" type="radio" default="" label="GOOGLEBL" description="GOOGLEBLDESC">
+					<option value="floatline">No</option>
+					<option value="breakline">Yes</option>
+				</field>
+				<field name="@spacer5" type="spacer" default="" label="" description="" />
+				
+				<field name="instagram" type="radio" default="1" label="INSTAGRAM" description="INSTAGRAMDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="instagram_link" type="text" default="http://" label="LINK" description="LINKINSTAGRAMDESC" />
+				<field name="instagrambl" type="radio" default="" label="INSTAGRAMBL" description="INSTAGRAMBLDESC">
+					<option value="floatline">No</option>
+					<option value="breakline">Yes</option>
+				</field
+				<field name="@spacer6" type="spacer" default="" label="" description="" />
+				
+				<field name="pinterest" type="radio" default="1" label="PINTEREST" description="PINTERESTDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="pinterest_link" type="text" default="http://" label="LINK" description="LINKPINTERESTDESC" />
+				<field name="pinterestbl" type="radio" default="false" label="PINTERESTBL" description="PINTERESTBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer7" type="spacer" default="" label="" description="" />
+				
+				<field name="foursquare" type="radio" default="1" label="FOURSQUARE" description="FOURSQUAREDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="foursquare_link" type="text" default="http://" label="LINK" description="LINKFOURSQUAREDESC" />
+				<field name="foursquarebl" type="radio" default="false" label="FOURSQUAREBL" description="FOURSQUAREBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer8" type="spacer" default="" label="" description="" />
+				
+				<field name="myspace" type="radio" default="1" label="MYSPACE" description="MYSPACEDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="myspace_link" type="text" default="http://" label="LINK" description="LINKMYSPACEDESC" />
+				<field name="myspacebl" type="radio" default="false" label="MYSPACEBL" description="MYSPACEBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer9" type="spacer" default="" label="" description="" />
+				
+				<field name="youtube" type="radio" default="1" label="YOUTUBE" description="YOUTUBEDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="youtube_link" type="text" default="http://" label="LINK" description="LINKYOUTUBEDESC" />
+				<field name="youtubebl" type="radio" default="false" label="YOUTUBEBL" description="YOUTUBEBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer10" type="spacer" default="" label="" description="" />
+				
+				<field name="flickr" type="radio" default="1" label="FLICKR" description="FLICKRDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="flickr_link" type="text" default="http://" label="LINK" description="LINKFLICKRDESC" />
+				<field name="flickrbl" type="radio" default="false" label="FLICKRBL" description="FLICKRBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer11" type="spacer" default="" label="" description="" />
+				
+				<field name="digg" type="radio" default="1" label="DIGG" description="DIGGDESC">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="digg_link" type="text" default="http://" label="LINK" description="LINKDIGGDESC" />
+				<field name="diggbl" type="radio" default="false" label="DIGGBL" description="DIGGBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer12" type="spacer" default="" label="" description="" />
+				
+				<field name="linkedin" type="radio" default="1" label="Linkedin" description="LINKEDINDESC">
+					<option value="0">Hide</option>					
+					<option value="1">Show</option>				
+				</field>				
+				<field name="linkedin_link" type="text" default="http://" label="LINK" description="LINKLINKEDINDESC" />
+				<field name="linkedinbl" type="radio" default="false" label="LINKEDINBL" description="LINKEDINBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer13" type="spacer" default="" label="" description="" />	
+				
+				<field name="rss" type="radio" default="1" label="RSS" description="RSSDESC">
+					<option value="0">Hide</option>					
+					<option value="1">Show</option>				
+				</field>				
+				<field name="rss_link" type="text" default="http://" label="LINK" description="LINKRSSDESC" />
+				<field name="rssbl" type="radio" default="false" label="RSSBL" description="RSSBLDESC">
+					<option value="false">No</option>
+					<option value="true">Yes</option>
+				</field>
+				<field name="@spacer14" type="spacer" default="" label="" description="" />	
+				
+				
+				<field name="styles" type="radio" default="01" label="STYLES" description="STYLESDESC">					
+					<option value="01">Style 01 (default)</option>
+					<option value="02">Style 02</option>
+					<option value="03">Style 03</option>
+					<option value="04">Style 04</option>
+				</field>				
+				<field name="@spacer15" type="spacer" default="" label="" description="" />	
+				
+				<field name="size" type="radio" default="64" label="SIZE" description="SIZEDESC">					
+					<option value="64">64x64 (default)</option>
+					<option value="32">32x32</option>
+					<option value="24">24x24</option>
+					<option value="16">16x16</option>
+				</field>				
+				<field name="@spacer16" type="spacer" default="" label="" description="" />					
+				
+				
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
